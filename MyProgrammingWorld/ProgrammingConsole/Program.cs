@@ -6,6 +6,7 @@ namespace ProgrammingConsole
     {
         static void Main(string[] args)
         {
+            new ExecutePrograms().Start();
             Console.WriteLine("Hello World!");
         }
     }
