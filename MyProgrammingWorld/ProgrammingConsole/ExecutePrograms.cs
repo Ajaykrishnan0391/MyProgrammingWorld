@@ -65,6 +65,16 @@ namespace ProgrammingConsole
                 default: return new BinarySearch();
             }
         }
+        static int[] GetInputArrayFromFile()
+        {
+            // copy the below line to a notepad called "input" and put it in D drive
+            //1 3 5 9 10 15 16 18 19 20
+            System.IO.StreamReader file = new System.IO.StreamReader("D:\\input.txt");
+            string input = file.ReadToEnd();
+            String[] listInts = input.Split(' ');
+            int[] arr = Array.ConvertAll(listInts, int.Parse);
+            return arr;
+        }
 
     }
 }
